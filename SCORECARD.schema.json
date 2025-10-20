@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sol Compliance Scorecard",
+  "type": "object",
+  "properties": {
+    "organization": { "type": "string" },
+    "model": { "type": "string" },
+    "version": { "type": "string" },
+    "addenda": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rfc_id": { "type": "string" },
+          "rfc_version": { "type": "string" },
+          "status": { "type": "string", "enum": ["DRAFT", "PROVISIONAL", "STABLE"] },
+          "attestations": { "type": "array", "items": { "type": "string" } },
+          "ots": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["rfc_id", "rfc_version", "status"]
+      }
+    },
+    "lineage_parent_sha256": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date-time" }
+  },
+  "required": ["organization", "model", "version", "addenda", "last_updated"]
+}

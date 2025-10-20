@@ -1,0 +1,21 @@
+name: Adopter registration
+description: Register your organization and implemented addenda
+labels: [adopter, registry]
+body:
+  - type: input
+    id: org
+    attributes:
+      label: Organization name
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email/URL
+  - type: textarea
+    id: addenda
+    attributes:
+      label: Implemented addenda and versions
+      description: e.g., SOL-RFC-0001 v0.1.0
+  - type: textarea
+    id: proofs
+    attributes:
+      label: Public proofs (signatures, OTS, scorecards)

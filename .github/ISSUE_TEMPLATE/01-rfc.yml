@@ -1,0 +1,28 @@
+name: RFC proposal
+description: Propose a new Sol addendum (standards document)
+labels: [rfc, standards]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+  - type: input
+    id: rfc_id
+    attributes:
+      label: Proposed ID (e.g., SOL-RFC-0002)
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+  - type: textarea
+    id: normative
+    attributes:
+      label: Normative Requirements (MUST/MUST NOT/SHOULD)
+  - type: textarea
+    id: compliance
+    attributes:
+      label: Compliance & Public Proofs
+  - type: textarea
+    id: security
+    attributes:
+      label: Security & Privacy Considerations
