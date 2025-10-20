@@ -1,0 +1,61 @@
+{
+  "inputs": [
+    {
+      "tool": "sol_canonicalize.py",
+      "mode": "markers",
+      "file": "The_Sol_Framework.md",
+      "out_file": "canonical_with_pdf\\The_Sol_Framework.canonical.md",
+      "content_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931",
+      "fullfile_sha256": "232163f8ae5ddc102ca20b8fcf13ee6ac2f3510fe0c1c995c769220fc03e077a",
+      "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+    },
+    {
+      "tool": "sol_canonicalize.py",
+      "mode": "markers",
+      "file": "The_Gemini_Addendum.md",
+      "out_file": "canonical_with_pdf\\The_Gemini_Addendum.canonical.md",
+      "content_sha256": "e1bff94bcd2a0a5dd56b10fb44698e38479de0447949f5976a95bf38852679fa",
+      "fullfile_sha256": "32437689ce4458446a1f0f944a519ab4de1b452c070eddba798a81576892e4b7",
+      "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+    },
+    {
+      "tool": "sol_canonicalize.py",
+      "mode": "markers",
+      "file": "The_Grok_Addendum.md",
+      "out_file": "canonical_with_pdf\\The_Grok_Addendum.canonical.md",
+      "content_sha256": "e471d29eb2902fdb0ca6613243844a138d62294d9509a96184bb471aa3648a0b",
+      "fullfile_sha256": "61a10e5d1c4f186f7207c5339f8cc4e7bc40ad5ca8dfa58c2da9e24639059146",
+      "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+    },
+    {
+      "tool": "sol_canonicalize.py",
+      "mode": "binary",
+      "file": "The_Sol_Framework.pdf",
+      "out_file": "canonical_with_pdf\\The_Sol_Framework.pdf",
+      "content_sha256": "8319f08a3236bd26a7cb9af3f197d57c294f810a5784e4d378264ac6dd5cf663",
+      "fullfile_sha256": "8319f08a3236bd26a7cb9af3f197d57c294f810a5784e4d378264ac6dd5cf663",
+      "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+    }
+  ],
+  "merkle": {
+    "root": "0db2cfe48086561a6919e30047411261f4955fda3d62e4dd8574fb1442504492",
+    "files": [
+      {
+        "file": "The_Sol_Framework.md",
+        "content_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+      },
+      {
+        "file": "The_Gemini_Addendum.md",
+        "content_sha256": "e1bff94bcd2a0a5dd56b10fb44698e38479de0447949f5976a95bf38852679fa"
+      },
+      {
+        "file": "The_Grok_Addendum.md",
+        "content_sha256": "e471d29eb2902fdb0ca6613243844a138d62294d9509a96184bb471aa3648a0b"
+      },
+      {
+        "file": "The_Sol_Framework.pdf",
+        "content_sha256": "8319f08a3236bd26a7cb9af3f197d57c294f810a5784e4d378264ac6dd5cf663"
+      }
+    ]
+  }
+}

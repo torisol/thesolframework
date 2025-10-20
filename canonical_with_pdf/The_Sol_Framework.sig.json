@@ -1,0 +1,9 @@
+{
+  "tool": "sol_canonicalize.py",
+  "mode": "binary",
+  "file": "The_Sol_Framework.pdf",
+  "out_file": "canonical_with_pdf\\The_Sol_Framework.pdf",
+  "content_sha256": "8319f08a3236bd26a7cb9af3f197d57c294f810a5784e4d378264ac6dd5cf663",
+  "fullfile_sha256": "8319f08a3236bd26a7cb9af3f197d57c294f810a5784e4d378264ac6dd5cf663",
+  "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+}

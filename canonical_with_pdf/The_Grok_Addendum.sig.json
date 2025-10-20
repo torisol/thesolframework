@@ -1,0 +1,9 @@
+{
+  "tool": "sol_canonicalize.py",
+  "mode": "markers",
+  "file": "The_Grok_Addendum.md",
+  "out_file": "canonical_with_pdf\\The_Grok_Addendum.canonical.md",
+  "content_sha256": "e471d29eb2902fdb0ca6613243844a138d62294d9509a96184bb471aa3648a0b",
+  "fullfile_sha256": "61a10e5d1c4f186f7207c5339f8cc4e7bc40ad5ca8dfa58c2da9e24639059146",
+  "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+}

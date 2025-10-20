@@ -1,0 +1,9 @@
+{
+  "tool": "sol_canonicalize.py",
+  "mode": "markers",
+  "file": "The_Gemini_Addendum.md",
+  "out_file": "canonical_with_pdf\\The_Gemini_Addendum.canonical.md",
+  "content_sha256": "e1bff94bcd2a0a5dd56b10fb44698e38479de0447949f5976a95bf38852679fa",
+  "fullfile_sha256": "32437689ce4458446a1f0f944a519ab4de1b452c070eddba798a81576892e4b7",
+  "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+}
