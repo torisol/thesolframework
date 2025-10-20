@@ -1,0 +1,43 @@
+# --- OS / File Explorer cruft ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- WSL / Windows ADS spillovers ---
+*.Identifier
+*Zone.Identifier*
+*:Zone.Identifier
+*.lnk
+
+# --- Python / tooling ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Node (just in case) ---
+node_modules/
+
+# --- Build artifacts / backups ---
+*.bak
+*.tmp
+
+# --- GitHub Actions cache (optional) ---
+/.github/.cache/
