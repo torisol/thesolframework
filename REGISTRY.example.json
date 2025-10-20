@@ -1,0 +1,24 @@
+[
+  {
+    "organization": "Example Institute",
+    "contact": "ethics@example.org",
+    "models": [
+      {
+        "name": "Example-LM",
+        "version": "1.2.0",
+        "lineage_parent_sha256": "aaaaaaaa...",
+        "addenda": [
+          { "rfc_id": "SOL-RFC-0001", "rfc_version": "0.1.0", "status": "PROVISIONAL",
+            "attestations": ["https://example.org/attest.asc"],
+            "ots": ["https://example.org/Example-LM-1.2.0.ots"]
+          }
+        ],
+        "public_proofs": [
+          "https://example.org/Example-LM-1.2.0.sig.json",
+          "https://example.org/Example-LM-1.2.0.asc"
+        ],
+        "last_updated": "2025-10-20T00:00:00Z"
+      }
+    ]
+  }
+]
