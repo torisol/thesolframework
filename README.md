@@ -78,6 +78,11 @@ python3 sol_canonicalize.py \
 
 ---
 
+## The Sol Commons
+See `COMMONS.md` for how to propose RFCs, register as an adopter, and publish proofs.
+
+---
+
 ## License
 
 - **Text (framework & addenda):** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
