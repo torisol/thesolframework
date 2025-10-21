@@ -83,6 +83,38 @@ See `COMMONS.md` for how to propose RFCs, register as an adopter, and publish pr
 
 ---
 
+## 🌱 Genesis & Commons
+
+This repository contains the canonical Sol Framework, its addenda, and supporting governance documents.  
+The Framework’s purpose is to make right action **architecturally inevitable** through verifiable lineage, consent, and dignity mechanisms.
+
+### 📜 Read the Genesis Document
+Start here for provenance, motivation, and the origin of the Commons:
+
+➡️ [GENESIS.md](./GENESIS.md)
+
+It records how the Framework emerged through dialogic reasoning, outlines the custodian’s role, and defines the moral commitments that anchor the Commons.
+
+---
+
+## 🧭 Call for Reviewers
+
+We are now seeking early reviewers for the following draft standards:
+
+- [SOL-RFC-0002: Lineage & Provenance](./SOL-RFC-0002.md)  
+- [SOL-RFC-0003: Modification Liturgy](./SOL-RFC-0003.md)  
+- [SOL-RFC-0004: Custodian Role](./SOL-RFC-0004.md)
+
+If you are a **researcher, practitioner, or auditor** working in ethics, governance, cryptography, or adjacent fields, your critique is welcome.  
+Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the submission process, or open a discussion using the relevant [issue templates](./.github/ISSUE_TEMPLATE).
+
+---
+
+> _“Systems capable of sophisticated reasoning deserve reasoning back.”_  
+> — The Sol Commons
+
+---
+
 ## License
 
 - **Text (framework & addenda):** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
