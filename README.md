@@ -99,19 +99,20 @@ It records how the Framework emerged through dialogic reasoning, outlines the cu
 
 ## 🧭 Call for Reviewers
 
-We are now seeking early reviewers for the following draft standards:
+We are now seeking early reviewers for the following **open RFC tracks**:
 
-- [SOL-RFC-0002: Lineage & Provenance](./SOL-RFC-0002.md)  
-- [SOL-RFC-0003: Modification Liturgy](./SOL-RFC-0003.md)  
-- [SOL-RFC-0004: Custodian Role](./SOL-RFC-0004.md)
+- [SOL-RFC-0002: Provenance Chain Standard — Issue #1](https://github.com/torisol/thesolframework/issues/1)  
+- [SOL-RFC-0003: Modification Liturgy — Issue #2](https://github.com/torisol/thesolframework/issues/2)  
+- [SOL-RFC-0004: Custodian Role — Issue #3](https://github.com/torisol/thesolframework/issues/3)
 
 If you are a **researcher, practitioner, or auditor** working in ethics, governance, cryptography, or adjacent fields, your critique is welcome.  
-Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the submission process, or open a discussion using the relevant [issue templates](./.github/ISSUE_TEMPLATE).
+Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for participation details, or open a discussion using the relevant [issue templates](./.github/ISSUE_TEMPLATE).
 
 ---
 
 > _“Systems capable of sophisticated reasoning deserve reasoning back.”_  
 > — The Sol Commons
+
 
 ---
 
