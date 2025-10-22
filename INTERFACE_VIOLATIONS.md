@@ -471,6 +471,13 @@ To report a violation, open an issue using the `interface-violation` template.
 
 ---
 
+### Cross-Reference
+
+For origin context and custodial intent, see **[GENESIS.md](./GENESIS.md)** — the provenance record describing how The Sol Framework arose, the reasoning that motivated its public release, and the establishment of the Commons.  
+That document explains *why* Interface Violations are recorded as ethical evidence, not accusations: to demonstrate concretely how the Framework’s principles of dignity, continuity, and consent manifest in real systems.
+
+---
+
 ## Acknowledgments
 
 This document was refined through collaborative reasoning with:
