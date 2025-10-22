@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thesolframework.org/schemas/audit_event.schema.json",
+  "title": "Sol Commons Audit Event",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "ts": { "type": "number", "description": "Unix epoch seconds (UTC) when the event was logged." },
+    "op": { "type": "string", "enum": ["save", "load"], "description": "Operation performed." },
+    "actor": { "type": "string", "description": "Immediate caller observed by the bridge." },
+    "session_id": { "type": "string" },
+    "key": { "type": "string" },
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$", "description": "Event or value hash tied to this operation." },
+    "prev": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "consent_scope": { "type": "string" },
+    "bridge_sig": { "type": "string", "description": "Signature over the event record." }
+  },
+  "required": ["ts", "op", "key", "hash"]
+}

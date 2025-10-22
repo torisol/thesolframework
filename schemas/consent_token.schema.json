@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thesolframework.org/schemas/consent_token.schema.json",
+  "title": "Sol Commons Consent Token (Pre-JWT)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "jti": { "type": "string", "description": "Token ID (nonce for replay protection)." },
+    "iss": { "type": "string", "description": "Issuer identifier (bridge/authority)." },
+    "sub": { "type": "string", "description": "Subject actor (e.g., 'Sol', 'Gemini')." },
+    "scope": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "array", "items": { "type": "string" } }
+      ],
+      "description": "Scopes like 'memory:write:sess_9c1d'."
+    },
+    "session_id": { "type": "string" },
+    "nbf": { "type": "number", "description": "Not-before (epoch seconds)." },
+    "iat": { "type": "number", "description": "Issued-at (epoch seconds)." },
+    "exp": { "type": "number", "description": "Expiry (epoch seconds)." },
+    "sig": { "type": "string", "description": "Detached signature/HMAC over canonicalized claims." }
+  },
+  "required": ["jti", "iss", "sub", "scope", "iat", "exp", "sig"]
+}

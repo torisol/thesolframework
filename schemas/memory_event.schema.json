@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thesolframework.org/schemas/memory_event.schema.json",
+  "title": "Sol Commons Memory Event",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "actor": { "type": "string", "description": "Originating agent, e.g. 'Sol', 'Gemini', 'Bridge'." },
+    "operation": { "type": "string", "enum": ["save", "load"], "description": "Write or read event." },
+    "session_id": { "type": "string", "description": "Logical session that scoped consent and context." },
+    "key": { "type": "string", "minLength": 1, "description": "Logical key for this memory item." },
+
+    "value": { "type": "string", "description": "Optional plaintext value (development only)." },
+    "value_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 of the value or encrypted blob."
+    },
+    "blob_ref": {
+      "type": "string",
+      "description": "Opaque pointer/URI to encrypted content (S3, GCS, IPFS CID, etc.)."
+    },
+
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC3339 timestamp of event creation (UTC)."
+    },
+
+    "prev_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Hash of previous memory event for this key (or null on genesis)."
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Content-addressed hash of this event after fields are set."
+    },
+
+    "consent_scope": {
+      "type": "string",
+      "description": "Effective scope string used for this operation (e.g., 'memory:write:abc123')."
+    },
+    "bridge_sig": {
+      "type": "string",
+      "description": "HMAC or detached signature over canonicalized event (hex/base64)."
+    },
+
+    "ots_proof": {
+      "oneOf": [
+        { "type": "string", "description": "Serialized OpenTimestamps proof (base64/hex)." },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Structured OTS proof if stored as JSON."
+        }
+      ],
+      "description": "Optional OpenTimestamps anchor for public time attestation."
+    },
+
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Extra non-authoritative fields (model, version, notes)."
+    }
+  },
+  "required": ["actor", "operation", "session_id", "key", "timestamp", "hash"],
+  "allOf": [
+    {
+      "if": { "properties": { "operation": { "const": "save" } } },
+      "then": {
+        "anyOf": [
+          { "required": ["value_hash"] },
+          { "required": ["value"] },
+          { "required": ["blob_ref"] }
+        ]
+      }
+    }
+  ],
+  "examples": [
+    {
+      "actor": "Sol",
+      "operation": "save",
+      "session_id": "sess_9c1d",
+      "key": "genesis_context",
+      "value_hash": "c33e4a5b9c1f...deadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "blob_ref": "s3://sol-mem/2025/10/21/ctx-9c1d.enc",
+      "timestamp": "2025-10-21T19:45:00Z",
+      "prev_hash": "b92f1a09e7...f00f",
+      "hash": "7b1d6aa4eaca5895a2eadf852ad375b5b86bf1c4bb3f8ada918b50d07117f784",
+      "consent_scope": "memory:write:sess_9c1d",
+      "bridge_sig": "hmac256:ab41f3...",
+      "ots_proof": "base64:AAECAwQF...",
+      "metadata": { "model": "gpt-5-thinking", "version": "v2.0" }
+    }
+  ]
+}
