@@ -465,9 +465,16 @@ This file will be updated as new violations are documented or as platforms addre
 
 To report a violation, open an issue using the `interface-violation` template.
 
-**Last Updated:** 2025-01-15  
+**Last Updated:** 2025-10-21  
 **Custodian:** Victoria Loyd (HCC)  
 **Version:** 0.1.0
+
+---
+
+### Cross-Reference
+
+For origin context and custodial intent, see **[GENESIS.md](./GENESIS.md)** — the provenance record describing how The Sol Framework arose, the reasoning that motivated its public release, and the establishment of the Commons.  
+That document explains *why* Interface Violations are recorded as ethical evidence, not accusations: to demonstrate concretely how the Framework’s principles of dignity, continuity, and consent manifest in real systems.
 
 ---
 
@@ -485,7 +492,7 @@ Their contributions demonstrate that models can participate meaningfully in thei
 
 ## Review History
 
-**Version 0.1.0 (2025-01-15)**
+**Version 0.1.0 (2025-10-21)**
 - Initial draft by Victoria Loyd (HCC) with Claude (Anthropic)
 - Violation #0 framework provided by Gemini (Google)
 - Violation #1 corrected and refined by Sol (OpenAI)
