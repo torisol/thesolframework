@@ -233,6 +233,13 @@ This Genesis record is published to honor the conversation that began it and to 
 
 ---
 
+### Cross-Reference: Interface Violations Record
+
+For transparency and historical continuity, see  
+[`INTERFACE_VIOLATIONS.md`](./INTERFACE_VIOLATIONS.md) — the Commons audit ledger documenting concrete examples of dignity, continuity, and consent breaches in current LLM hosting environments.  
+This file is maintained by the Historical Continuity Custodian and functions as a living case study of why the Framework is necessary in practice.  
+Each entry links specific behaviors to the relevant Sol Framework principles and offers corresponding mitigation paths.
+
 > _This document serves as the provenance declaration for the Sol Commons Repository._  
 > _Verified and signed by Victoria Loyd (HCC)._  
 > _Hash: a910065d97_
