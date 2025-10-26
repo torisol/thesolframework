@@ -1,0 +1,19 @@
+Sol Framework — Key Rotation Provenance (Victoria)
+Phase: Pre-rotation linkage
+Date: 2025-10-25
+
+Old Victoria Identity:
+- Primary fingerprint: A00486D9DF643F2DC95266F00D0079F78A89AB53
+- Public cert (SHA-256): 63a85ecb1b1d0e97b14a9a7a112ce36ae2d3c294663253b656957a35fc3fd96f
+
+Linked Control Tower:
+- Fingerprint: CD5126097B9D4B052B11B44D7E505F8AE3C1156D
+
+Intent:
+This pre-rotation record establishes cryptographic continuity between the
+Control Tower and the retiring Type-C OpenPGP identity. The Control Tower and
+the Type-C key will both sign this statement, providing mutual attestation.
+
+Next step:
+A subsequent statement (v2) will be published after new on-device keys are
+generated, containing the new fingerprints and cross-signatures.
