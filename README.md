@@ -125,3 +125,45 @@ See `LICENSE` for full terms.
 
 ---
 
+
+---
+
+## Interactive T5-small Prompt Playground
+
+This repository includes a lightweight Gradio app for experimenting with the [T5-small](https://huggingface.co/t5-small) model without writing code. To launch it locally:
+
+1. Install the dependencies (Python 3.9+ recommended):
+   ```bash
+   pip install gradio transformers torch
+   ```
+2. Run the app:
+   ```bash
+   python apps/t5_small_gradio_app.py
+   ```
+3. Open the link that Gradio prints (defaults to `http://127.0.0.1:7860/`) and enter prompts directly in the browser UI.
+
+The interface exposes controls for max new tokens, temperature, top-p, and beam search so you can explore different decoding strategies.
+
+### Running in Google Colab
+
+You can launch the same UI in [Google Colab](https://colab.research.google.com/) with a few extra steps:
+
+1. Start a new notebook and install the dependencies in a cell:
+   ```python
+   !pip install gradio transformers torch
+   ```
+2. Clone this repository or upload `apps/t5_small_gradio_app.py` to the notebook workspace.
+3. Run the app with the `--share` flag to create an external link that Colab exposes outside the sandbox:
+   ```python
+   !python apps/t5_small_gradio_app.py --share
+   ```
+4. Colab will display both a local URL and a public `gradio.live` link. Tap the public link to use the interface on any device.
+
+### Trying it from your phone
+
+- **From Colab:** Use the public `gradio.live` link generated when you pass `--share`; it works on mobile browsers.
+- **From your own machine:** Start the app locally with `--share` to get a temporary public link, or run it on your LAN by binding to all interfaces:
+  ```bash
+  python apps/t5_small_gradio_app.py --server-name 0.0.0.0 --server-port 7860
+  ```
+  Then browse to `http://<your-computer-ip>:7860` from your phone (both devices must be on the same network).
