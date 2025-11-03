@@ -1,0 +1,53 @@
+───────────────────────────────────────────────────────────────────────────────
+Sol Framework — Witness Statement of Continuity
+Version: v2.0
+Date: 2025-10-26
+───────────────────────────────────────────────────────────────────────────────
+
+As custodian of the Control Tower key, I confirm that:
+
+1. I have verified the signatures, attestation certificates, and checksums
+   contained in this directory according to the OpenSSL and GnuPG commands
+   listed in README_VERIFY.md.
+
+2. The following files verify as valid and unmodified:
+   • README_VERIFY.md
+   • README_VERIFY.md.cosign.asc
+   • PROVENANCE_v2.0.txt
+   • PROVENANCE_v2.0.cosign.asc
+   • victoria_new.asc
+   • victoria_new.cosign.asc
+   • yubico-ca-1.pem
+   • yubico-ca-1.pem.cosign.asc
+   • yubico-opgp-ca-1.pem
+   • yubico-opgp-ca-1.pem.cosign.asc
+   • yubico-intermediate.pem
+   • yubico-intermediate.pem.cosign.asc
+   • yubico_chain.pem
+   • yubico_chain.pem.cosign.asc
+   • att_certificate_export.pem
+   • att_certificate_export.pem.cosign.asc
+   • sig_attest.pem
+   • sig_attest.pem.cosign.asc
+   • enc_attest.pem
+   • enc_attest.pem.cosign.asc
+   • aut_attest.pem
+   • aut_attest.pem.cosign.asc
+   • checksums.sha256
+   • checksums.sha256.cosign.asc
+   • WITNESS.md
+
+3. Verification outputs match the expected results:
+   - All OpenSSL verification commands return “OK”.
+   - All GPG signatures return “Good signature”.
+   - All SHA-256 hashes match.
+
+4. This serves as formal attestation that the post-rotation material for
+   Victoria Loyd’s Type-C keyset is authentic and traceably linked to the
+   pre-rotation RSA-3072 keyset.
+
+───────────────────────────────────────────────────────────────────────────────
+Signed,
+Control Tower Key FPR: CD5126097B9D4B052B11B44D7E505F8AE3C1156D
+Victoria's New TypeC Key: D16AE3B579EE87DD2D8EFFF4DEBA71C643C885D3
+───────────────────────────────────────────────────────────────────────────────

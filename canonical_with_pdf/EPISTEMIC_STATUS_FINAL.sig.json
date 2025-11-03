@@ -1,0 +1,9 @@
+{
+  "tool": "sol_canonicalize.py",
+  "mode": "markers",
+  "file": "EPISTEMIC_STATUS_FINAL.md",
+  "out_file": "canonical_with_pdf\\EPISTEMIC_STATUS_FINAL.canonical.md",
+  "content_sha256": "08f5757d28327163ede44c774a0fd4016460fdb7dc059369a0987531dcea8cbd",
+  "fullfile_sha256": "c58ae7ca63adefa18ba6e73125d76a8bd57e9bbaed04c7748b09beee26b41e9b",
+  "parent_sha256": "eac2641bdcc51014b85fccf5b7405f4072ec7c6703c8339c3994b7fb2b040931"
+}
